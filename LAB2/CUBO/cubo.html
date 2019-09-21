@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cubo</title>
+	<link rel="stylesheet"  href="cube.css">
+	<style >
+	*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+			html, body{
+						height:100%; 
+		}
+
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: rgba(192,192,192,0.3);
+		} 
+		.container {
+  width: 150px;
+  height: 150px;
+  margin: 50px auto;
+  position: relative;
+  perspective: 300px;
+}
+
+#cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+
+}
+
+#cube figure {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: 2px solid black;
+}
+
+#cube .lado1 {
+  background-color: rgb(255,0,0,0.3);
+  transform: rotateX(0deg) translateZ(-75px);
+}
+
+#cube .lado2 {
+  background-color: rgba(192,192,192,0.3);
+  transform: rotateY(90deg) translateZ(-75px);
+}
+
+#cube .lado3 {
+  background: hsla(120, 100%, 50%, 0.5);
+  transform: rotateX(90deg) translateZ(-75px);
+}
+
+#cube .lado4 {
+  background: hsla(180, 100%, 50%, 0.5);
+  transform: rotateX(0deg) translateZ(75px);
+}
+
+#cube .lado5 {
+  background: hsla(240, 100%, 50%, 0.5);
+  transform: rotateY(90deg) translateZ(75px);
+}
+
+#cube .lado6 {
+  background:hsla(290,100%,50%,0.3);
+  transform: rotateX(90deg) translateZ(75px);
+}
+
+	</style>
+</head>
+<body>
+<section class="container">
+  <div id="cube">
+    <figure class="lado1">lado1</figure>
+    <figure class="lado2">lado2</figure>
+    <figure class="lado3">lado3</figure>
+    <figure class="lado4">lado4</figure>
+    <figure class="lado5">lado5</figure>
+    <figure class="lado6" >lado6</figure>
+<script >
+	var angX = 0;
+var angY = 0;
+
+$('.boton').on('click', function() {
+  switch ($(this).attr("id")) {
+    case "arriba":
+      angX = angX + 90;
+      break;
+    case "abajo":
+      angX = angX - 90;
+      break;
+    case "derecha":
+      angY = angY + 90;
+      break;
+    case "izquierda":
+      angY = angY - 90;
+      break;
+  }
+  $('#cube').attr('style', 'transform: rotateX(' + angX + 'deg) rotateY(' + angY + 'deg);')
+});
+</script>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,25 @@
+Pre procesamiento de css: escribir CSS utilizando otros-lenguajes y/o herramientas
+que completen la hoja de estilos. Hoy en dia existen dos:
+less y sass()--->(es el pre-procesador de bootstrap)
+
+Sass: .scss
+link: https://sass-lang.com/ (PAGINA)
+Less: .less
+http://lesscss.org/usage/#command-line-usage-installing (PAGINA)
+
+Aplicaión de compilación: 
+http://koala-app.com/
+
+Node js: Es un entorno de desarrllo que usa JS para ejecutar codigo. 
+Viene con muchos
+
+NPM: Node Package Manager
+Sintaxis
+>npm{install|i}{-g|--save|--save-dev}
+
+Local: el paquete se va a descargar en la carpeta donde estemos corriendo
+el comando de instalacion
+
+GLOBAL: el paquete se acceder como un comando/ programa mas del SO
+
+nodejs.org (PAGINA)

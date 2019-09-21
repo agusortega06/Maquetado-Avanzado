@@ -1,0 +1,49 @@
+			Maquetado avanzado
+Profesor: horacio.estevez@gmail.com
+- background-image permite también agregar gradientes.
+Gradientes 
+- lineales:linear-gradient(color [cant%], color [cant%], color[cant%])
+- Radiales:radial-gradient()
+
+Reglas de reseteo
+normalize.css
+
+background-color: funciones de color
+hsl(0-360deg matiz, hue 0-100% saturacion,hue 0-100%luminosidad)
+
+- box shadow: es la regla de sombra
+box-shadow: desX desY [blur] [spread] [color] [tipo]
+- justify-content: significa alineacion horizontal
+
+inset es concavidad
+deg: grados
+______________________________________________________________________________________________________________________
+Transformaciones: mutaciones que se aplican a una caja y que no afectan al resto del layout adyacente. 
+transform es una regla de css3
+Hay 4 transformaciones basicas:
+*translate()
+translate|translateX|translateY|translateZ|translate3D
+
+*skew()
+*scale(deg)
+*rotate()... todas son funciones
+
+-webkit-transform 
+-o- transform 
+-moz- transform 
+-ms- transform 
+___________________
+ ANIMACIONES: conunto de puntos para mutar una caja.No necesariamente tienen que estar involucradas las reglas de tranform
+_____________________________________________________________________________________________________________________________
+
+Transiciones: forma de describir como una caja puede pasar entre un estado A o B
+transition: regla|all [, regla] [timing-function] [, duracion[delay]]
+
+transition-property: prop1, prop2, propN
+transition-duration: dur1, dur2, durN
+transition-delay: delay1, delay2, delayN
+transition-timing-function: ease-in(para que arranque despacio) | ease out(para que arranque  rapido)| ease-in-out| cubic-bezier
+
+
+
+CANIUSE.COM para buscar tranformaciones css3 2D.

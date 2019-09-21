@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Progress</title>
+
+<style>
+/*estos son solo algunos ejemplos de selectores especiales que serán vistos en el curso*/
+progress { width: 200px; height: 30px; }
+
+progress[value]{ background: lightBlue;  }
+/*modifica el fondo de la barra de progreso para ie*/
+progress::-webkit-progress-bar{
+/*modifica el fondo de la barra de progreso*/
+  background: lightBlue;
+}
+
+
+progress::-moz-progress-bar{
+/*modifica la barra en sí*/
+  background: green;
+}
+
+</style>
+</head>
+<body>
+<progress id="progreso" value="0.5" max="1.0">
+
+<script>
+document.getElementById('progreso').onclick = progresar;
+
+function progresar(){
+
+document.getElementById('progreso').value = 0.8
+
+}
+
+</script>
+
+</body>
+</html>
